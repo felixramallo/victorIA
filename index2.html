@@ -1,6 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victoria Chat</title>
+    <style>
+        /* Elimina bordes y márgenes de la página */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Evita barras de desplazamiento dobles */
+            background-color: #000; /* Fondo negro por si tarda en cargar */
+        }
+
+        /* Hace que el iframe ocupe toda la pantalla */
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+    </style>
+</head>
 <body>
-    <iframe src="https://victoriachat.lovable.app/v2" allowfullscreen></iframe>
+
+    <iframe 
+        src="https://victoriachat.lovable.app/v2" 
+        title="Victoria Chat"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+    </iframe>
+
 </body>
 </html>
